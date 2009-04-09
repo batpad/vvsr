@@ -1,0 +1,17 @@
+from django.contrib.gis import admin
+from django.contrib.gis.maps.google import GoogleMap
+from vvsr.mapping.models import Heritage, HeritageImage, MunicipalBoundary
+
+class HeritageImageInline(admin.TabularInline):
+  model = HeritageImage
+  extra = 8
+
+class HeritageAdmin(admin.GeoModelAdmin):
+  ordering = ['sr_no']
+  list_display = ('sr_no', 'asset')
+  search_fields = ['asset']
+  inlines = [HeritageImageInline]
+
+admin.site.register(Heritage, HeritageAdmin)
+# admin.site.register(MunicipalBoundary, admin.GeoModelAdmin)
+

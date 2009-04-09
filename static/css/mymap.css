@@ -1,0 +1,90 @@
+#map {
+  width: 100%;
+  float: left;
+  }
+
+#data {
+  float: left;
+  display: none;
+  width: 40%;
+  height: 100%;
+  margin-left: 20px;
+  background: #eee;
+  display: none;
+  position: relative;
+  border: 1px dashed #999;
+  }
+
+#loading {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  }
+
+#welcomeSpan {
+  color: #000;
+  font-size: 16px;
+  }
+
+#dataName {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  }
+
+#closeButton {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  color: #f00;
+  cursor: pointer;
+ }
+
+#details {
+  padding: 3px;
+  margin-top: 12px;
+  }
+
+#details > div {
+  color: #333;
+  font-weight: bold;    
+  }
+
+#details span {
+  color: #000;
+  }
+
+a img {
+  border: 0px;
+  padding: 2px;  
+  }
+
+#images_data {
+  text-align: center;
+  }
+
+.toggleBtn {
+  cursor: pointer;
+  color: #000;
+  margin-left: 2px;
+  width: 100px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 4px;
+  }
+
+.blockData {
+  display: none;
+  margin-left: 5px;
+  border: 1px dashed #6f6;
+  background-color: #ccc;
+  }
